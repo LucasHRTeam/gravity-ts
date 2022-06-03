@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^8.0.1",
     "ts-node-dev": "^2.0.0"
   }
 }
