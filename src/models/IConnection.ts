@@ -1,4 +1,4 @@
 export interface IConnection {
-    connection: string;
-    lastDisconnect: any;
+    connection?: string;
+    lastDisconnect?: any;
 }

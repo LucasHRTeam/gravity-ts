@@ -1,3 +1,3 @@
 export interface IMessagesUpsert {
-    message: any;
+    message?: any;
 }

@@ -1,8 +1,9 @@
+import { DisconnectReason } from '@adiwajshing/baileys'
 import { IConnection } from '../../models/IConnection'
 import { sock } from '../../connect'
 import { Boom } from '@hapi/boom'
 
-const connection = (): any => sock.ev.on('connection.update', (update: IConnection): any => {
+const connection = (): any => sock.ev.on('connection.update', (update: IConnection) => {
     const { connection, lastDisconnect } = update
     if(connection === 'close') {
         const shouldReconnect = (lastDisconnect.error as Boom)?.output?.statusCode !== DisconnectReason.loggedOut
