@@ -10,3 +10,5 @@ class DomainBot {
     }
   }
 }
+
+export { DomainBot }
