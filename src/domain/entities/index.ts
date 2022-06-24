@@ -1,4 +1,4 @@
-import { ISendMessage } from '../../usecase'
+import { ISendMessage } from '../usecases'
 
 class DomainBot {
   constructor(private readonly sendMessage: ISendMessage) {}
